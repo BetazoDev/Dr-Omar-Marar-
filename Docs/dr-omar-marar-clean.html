@@ -1,0 +1,1250 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Omar Marar, MD | Colon & Rectal Surgeon | Phoenix, Arizona</title>
+<meta name="description" content="Dr. Omar Marar is a board-certified Colon & Rectal Surgeon based in Phoenix, Arizona at Valley Surgical Clinics. Fellowship-trained at Thomas Jefferson University Hospital.">
+<meta name="keywords" content="colon rectal surgeon Phoenix Arizona, colorectal surgery Phoenix, Dr Omar Marar, Valley Surgical Clinics, colorectal cancer surgeon Arizona">
+<meta property="og:title" content="Dr. Omar Marar, MD | Colon & Rectal Surgeon Phoenix AZ">
+<meta property="og:description" content="Board-certified Colon & Rectal Surgeon. Fellowship-trained. Based in Phoenix, Arizona at Valley Surgical Clinics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0B2545;
+    --blue: #1565C0;
+    --blue-mid: #1976D2;
+    --blue-light: #E3F0FF;
+    --blue-accent: #2196F3;
+    --teal: #00838F;
+    --white: #ffffff;
+    --off-white: #F8FAFC;
+    --gray-100: #F1F5F9;
+    --gray-200: #E2E8F0;
+    --gray-400: #94A3B8;
+    --gray-600: #475569;
+    --gray-800: #1E293B;
+    --gold: #B8860B;
+    --gold-light: #FFF8E1;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--gray-800);
+    background: var(--white);
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    line-height: 1.2;
+  }
+
+  /* â”€â”€ NAV â”€â”€ */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(11, 37, 69, 0.97);
+    backdrop-filter: blur(10px);
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-brand {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-brand .name {
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .nav-brand .title {
+    color: var(--blue-accent);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--white); }
+
+  .nav-cta {
+    background: var(--blue-accent);
+    color: var(--white) !important;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    transition: background 0.2s !important;
+  }
+
+  .nav-cta:hover { background: #1976D2 !important; color: var(--white) !important; }
+
+  /* â”€â”€ HERO â”€â”€ */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: var(--navy);
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(105deg, rgba(11,37,69,0.97) 0%, rgba(11,37,69,0.88) 50%, rgba(21,101,192,0.55) 100%),
+      url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80') center/cover no-repeat;
+  }
+
+  /* Arizona desert overlay detail */
+  .hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=1600&q=80') center/cover no-repeat;
+    opacity: 0.12;
+    mix-blend-mode: luminosity;
+  }
+
+  .hero-geo {
+    position: absolute;
+    right: -60px;
+    top: 0;
+    bottom: 0;
+    width: 52%;
+    background: linear-gradient(135deg, rgba(33,150,243,0.12) 0%, rgba(0,131,143,0.08) 100%);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 120px 5% 80px;
+    max-width: 760px;
+    animation: fadeUp 0.9s ease both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--blue-accent);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background: var(--blue-accent);
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .hero-title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.15rem;
+    color: var(--blue-accent);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-headline {
+    font-size: 1.25rem;
+    color: rgba(255,255,255,0.82);
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 560px;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-credentials {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+
+  .cred-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255,255,255,0.65);
+    font-size: 0.82rem;
+    font-weight: 500;
+  }
+
+  .cred-badge svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--blue-accent);
+    flex-shrink: 0;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: var(--blue-accent);
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.95rem 2.2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 20px rgba(33,150,243,0.35);
+  }
+
+  .btn-primary:hover {
+    background: #1565C0;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(33,150,243,0.4);
+  }
+
+  .btn-outline {
+    display: inline-block;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.93rem 1.8rem;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+    margin-left: 1rem;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .btn-outline:hover {
+    border-color: var(--white);
+    background: rgba(255,255,255,0.08);
+  }
+
+  .hero-stats {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.04);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    padding: 1.5rem 5%;
+    gap: 3rem;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+    animation: fadeUp 0.9s 0.3s ease both;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 0.2rem;
+  }
+
+  /* â”€â”€ SECTION BASE â”€â”€ */
+  section { padding: 90px 5%; }
+
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--blue-accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  .section-label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: var(--blue-accent);
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: var(--navy);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .section-divider {
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue-accent), var(--teal));
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+  }
+
+  /* â”€â”€ ABOUT â”€â”€ */
+  #about {
+    background: var(--white);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .about-image {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  .about-image::before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: -16px;
+    right: 16px;
+    bottom: 16px;
+    border: 2px solid var(--blue-light);
+    border-radius: 8px;
+    z-index: -1;
+  }
+
+  .about-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: var(--navy);
+    color: var(--white);
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  .about-badge strong {
+    display: block;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--blue-accent);
+  }
+
+  .about-text p {
+    color: var(--gray-600);
+    margin-bottom: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+
+  .credential-list {
+    list-style: none;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .credential-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    font-size: 0.95rem;
+    color: var(--gray-600);
+  }
+
+  .credential-list li::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+    border-radius: 50%;
+    background: var(--blue-accent);
+    margin-top: 8px;
+  }
+
+  .credential-list strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  /* â”€â”€ EXPERTISE â”€â”€ */
+  #expertise {
+    background: var(--off-white);
+  }
+
+  .expertise-header {
+    max-width: 1100px;
+    margin: 0 auto 3rem;
+  }
+
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .expertise-card {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid var(--gray-200);
+    transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .expertise-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue-accent), var(--teal));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+
+  .expertise-card:hover {
+    box-shadow: 0 8px 32px rgba(21,101,192,0.12);
+    transform: translateY(-4px);
+    border-color: var(--blue-light);
+  }
+
+  .expertise-card:hover::after {
+    transform: scaleX(1);
+  }
+
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: var(--blue-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .card-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--blue-accent);
+  }
+
+  .expertise-card h3 {
+    font-size: 1.05rem;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.6rem;
+  }
+
+  .expertise-card p {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  /* â”€â”€ TEACHING â”€â”€ */
+  #teaching {
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+  }
+
+  #teaching::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 40%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80') center/cover no-repeat;
+    opacity: 0.06;
+  }
+
+  #teaching .section-label { color: var(--blue-accent); }
+  #teaching .section-title { color: var(--white); }
+
+  .teaching-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .teaching-text p {
+    color: rgba(255,255,255,0.7);
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .award-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 1.8rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+
+  .award-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 8px;
+    background: var(--gold-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .award-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: var(--gold);
+  }
+
+  .award-card h4 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.3rem;
+  }
+
+  .award-card p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.55);
+    margin: 0 !important;
+    line-height: 1.5 !important;
+  }
+
+  .teaching-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .t-stat {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-left: 3px solid var(--blue-accent);
+    border-radius: 0 6px 6px 0;
+    padding: 1.3rem 1.5rem;
+  }
+
+  .t-stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1;
+  }
+
+  .t-stat-label {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    margin-top: 0.25rem;
+    font-weight: 300;
+  }
+
+  /* â”€â”€ RESEARCH â”€â”€ */
+  #research {
+    background: var(--white);
+  }
+
+  .research-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 5rem;
+    align-items: start;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .research-intro p {
+    color: var(--gray-600);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+  }
+
+  .research-tag-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .research-tag {
+    background: var(--blue-light);
+    color: var(--blue);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.35rem 0.85rem;
+    border-radius: 100px;
+  }
+
+  .pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .pub-item {
+    border-left: 3px solid var(--gray-200);
+    padding: 1rem 1.4rem;
+    background: var(--off-white);
+    border-radius: 0 6px 6px 0;
+    transition: border-color 0.2s;
+  }
+
+  .pub-item:hover {
+    border-left-color: var(--blue-accent);
+  }
+
+  .pub-item h4 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+    line-height: 1.4;
+  }
+
+  .pub-item p {
+    font-size: 0.82rem;
+    color: var(--gray-400);
+    font-style: italic;
+  }
+
+  /* â”€â”€ GLOBAL HEALTH â”€â”€ */
+  #global {
+    position: relative;
+    overflow: hidden;
+    background: var(--off-white);
+  }
+
+  .global-inner {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .global-text p {
+    color: var(--gray-600);
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+  }
+
+  .global-highlight {
+    background: var(--blue-light);
+    border-radius: 8px;
+    padding: 1.5rem 1.8rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1.5rem;
+    border-left: 4px solid var(--blue-accent);
+  }
+
+  .global-highlight p {
+    margin: 0 !important;
+    font-size: 0.95rem;
+    color: var(--navy) !important;
+    font-weight: 500 !important;
+  }
+
+  .global-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  }
+
+  .global-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* â”€â”€ CONTACT â”€â”€ */
+  #contact {
+    background: var(--navy);
+    position: relative;
+    overflow: hidden;
+  }
+
+  #contact::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=60') center/cover no-repeat;
+    opacity: 0.05;
+  }
+
+  .contact-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  #contact .section-label { color: var(--blue-accent); }
+  #contact .section-title { color: var(--white); }
+
+  .contact-info p {
+    color: rgba(255,255,255,0.6);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+  }
+
+  .contact-detail {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.3rem;
+    color: rgba(255,255,255,0.75);
+  }
+
+  .contact-detail svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--blue-accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .contact-detail strong {
+    display: block;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .contact-detail span {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  .arizona-image {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .arizona-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7) saturate(1.1);
+  }
+
+  .arizona-image::after {
+    content: 'Phoenix, Arizona';
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: rgba(11,37,69,0.7);
+    padding: 0.4rem 0.9rem;
+    border-radius: 4px;
+  }
+
+  /* â”€â”€ FOOTER â”€â”€ */
+  footer {
+    background: #060F1E;
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  footer p {
+    color: rgba(255,255,255,0.3);
+    font-size: 0.82rem;
+  }
+
+  footer a {
+    color: rgba(255,255,255,0.4);
+    text-decoration: none;
+    font-size: 0.82rem;
+    transition: color 0.2s;
+  }
+
+  footer a:hover { color: var(--white); }
+
+  /* â”€â”€ SCROLL ANIMATIONS â”€â”€ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* â”€â”€ RESPONSIVE â”€â”€ */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .about-grid, .teaching-grid, .research-layout, .global-inner, .contact-inner {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    .expertise-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .hero-stats {
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .teaching-stats {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .t-stat { flex: 1; min-width: 140px; }
+    .about-image img { height: 320px; }
+    section { padding: 60px 5%; }
+  }
+
+  @media (max-width: 600px) {
+    .expertise-grid { grid-template-columns: 1fr; }
+    .btn-outline { display: none; }
+    .hero-stats { padding: 1rem 5%; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand">
+    <span class="name">Dr. Omar Marar, MD</span>
+    <span class="title">Colon & Rectal Surgery</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#global">Global Health</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-geo"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Board-Certified Surgeon Â· Phoenix, Arizona</div>
+    <h1>Dr. Omar Marar, MD</h1>
+    <div class="hero-title">Colon & Rectal Surgery Specialist</div>
+    <p class="hero-headline">Fellowship-trained at Thomas Jefferson University Hospital. Dedicated to surgical excellence, patient care, and advancing the next generation of surgeons.</p>
+    <div class="hero-credentials">
+      <span class="cred-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        Board Certified, ABCRS
+      </span>
+      <span class="cred-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        Thomas Jefferson University Fellowship
+      </span>
+      <span class="cred-badge">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        Valley Surgical Clinics, Phoenix AZ
+      </span>
+    </div>
+    <a href="#contact" class="btn-primary">Request Consultation</a>
+    <a href="#about" class="btn-outline">Learn More</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num">Fellowship</span>
+      <span class="stat-label">Thomas Jefferson University Hospital</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2018</span>
+      <span class="stat-label">Teaching Surgery Since</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2021</span>
+      <span class="stat-label">Spirit of Teaching Award</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">Global</span>
+      <span class="stat-label">Surgical Mission Work â€” Haiti</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-image reveal">
+      <img
+        src="IMG"
+        alt="Professional medical environment representing surgical excellence in Phoenix, Arizona"
+      >
+      <div class="about-badge">
+        <strong>Dr. Omar Marar</strong>
+        Colon & Rectal Surgeon<br>Phoenix, Arizona
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <div class="section-label">About Dr. Marar</div>
+      <h2 class="section-title">A Surgeon Defined by Training, Teaching & Leadership</h2>
+      <div class="section-divider"></div>
+      <p>Dr. Omar Marar is a board-certified Colon and Rectal Surgeon practicing at Valley Surgical Clinics in Phoenix, Arizona. His clinical expertise is grounded in years of rigorous training at nationally recognized institutions, where he developed a commitment to both surgical precision and compassionate patient care.</p>
+      <p>Dr. Marar completed his fellowship in Colon and Rectal Surgery at Thomas Jefferson University Hospital, one of the nation's leading academic medical centers. He completed his general surgery residency at St. Barnabas Medical Center, where he built a strong foundation in complex surgical cases.</p>
+      <p>Dr. Marar's academic work has taken him across leading institutions. He previously held a faculty appointment at Central Michigan University Health, where he shaped the next generation of surgeons. He now brings that same commitment to education and mentorship to his current practice at Valley Multi Specialty in Phoenix.</p>
+      <ul class="credential-list">
+        <li><strong>Pre-Medicine Studies</strong> â€” University of Miami (2005â€“2007)</li>
+        <li><strong>M.B.Ch.B., Medicine</strong> â€” Royal College of Surgeons in Ireland, RCSI (2007â€“2012)</li>
+        <li><strong>General Surgery Residency</strong> â€” St. Barnabas Medical Center</li>
+        <li><strong>Fellowship</strong> â€” Colon & Rectal Surgery, Thomas Jefferson University Hospital</li>
+        <li><strong>Former Faculty Appointment</strong> â€” Central Michigan University Health (past)</li>
+        <li><strong>Current Practice</strong> â€” Valley Multi Specialty, Phoenix, Arizona</li>
+        <li><strong>Board Certified</strong> â€” American Board of Colon and Rectal Surgery</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+  <div class="expertise-header reveal">
+    <div class="section-label">Clinical Expertise</div>
+    <h2 class="section-title">Specialized Surgical Care</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="expertise-grid">
+    <div class="expertise-card reveal">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+      </div>
+      <h3>Colorectal Cancer Care</h3>
+      <p>Comprehensive evaluation, surgical resection, and multidisciplinary management of colon and rectal cancers with a focus on oncologic outcomes and quality of life.</p>
+    </div>
+    <div class="expertise-card reveal">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <h3>Minimally Invasive Surgery</h3>
+      <p>Laparoscopic and robotic-assisted procedures for a wide range of colorectal conditions, offering patients shorter recovery times and reduced postoperative discomfort.</p>
+    </div>
+    <div class="expertise-card reveal">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      </div>
+      <h3>Colon & Rectal Surgery</h3>
+      <p>Expert surgical management of benign and malignant conditions of the colon and rectum, including diverticular disease, inflammatory bowel disease, and rectal prolapse.</p>
+    </div>
+    <div class="expertise-card reveal">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+      </div>
+      <h3>Digestive Health</h3>
+      <p>Diagnosis and surgical treatment of complex digestive conditions, coordinating care with gastroenterologists to provide integrated, patient-centered treatment plans.</p>
+    </div>
+    <div class="expertise-card reveal">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+      </div>
+      <h3>Advanced Surgical Procedures</h3>
+      <p>Complex pelvic floor reconstruction, sphincter-preserving surgery, transanal procedures, and advanced surgical techniques for high-acuity colorectal conditions.</p>
+    </div>
+    <div class="expertise-card reveal">
+      <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+      </div>
+      <h3>Anorectal Conditions</h3>
+      <p>Specialized treatment for hemorrhoids, fistulas, fissures, and perianal disease using both surgical and office-based procedures tailored to each patient's needs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING -->
+<section id="teaching">
+  <div class="teaching-grid">
+    <div class="teaching-text reveal">
+      <div class="section-label">Academic Leadership</div>
+      <h2 class="section-title">Teaching & Mentoring the Next Generation</h2>
+      <div class="section-divider"></div>
+      <p>Since 2018, Dr. Marar has overseen the general surgery sub-internship, guiding medical students through the rigors of surgical training with patience, expertise, and genuine investment in their development.</p>
+      <p>His approach to mentorship extends beyond the operating room. Dr. Marar is committed to fostering critical thinking, surgical judgment, and professionalism in every student he works with â€” qualities that define exceptional surgeons throughout their careers.</p>
+      <p>His dedication to education was formally recognized in 2021 when he was honored with the <strong style="color: #fff;">Dr. Debasish and Chinu Mridha Spirit of Teaching Award</strong>, a distinction that reflects his peers' and students' deep respect for his commitment to the profession.</p>
+      <div class="award-card">
+        <div class="award-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93-2.67-1.14-5-4.43-5-7.93V7.18L12 5z"/></svg>
+        </div>
+        <div>
+          <h4>2021 Spirit of Teaching Award</h4>
+          <p>Dr. Debasish and Chinu Mridha Award â€” Recognizing exceptional dedication to surgical education and mentorship</p>
+        </div>
+      </div>
+    </div>
+    <div class="teaching-stats reveal">
+      <div class="t-stat">
+        <div class="t-stat-num">2018</div>
+        <div class="t-stat-label">Year Dr. Marar began overseeing the general surgery sub-internship</div>
+      </div>
+      <div class="t-stat">
+        <div class="t-stat-num">VMS</div>
+        <div class="t-stat-label">Currently practicing at Valley Multi Specialty, Phoenix, Arizona</div>
+      </div>
+      <div class="t-stat">
+        <div class="t-stat-num">Award</div>
+        <div class="t-stat-label">2021 Spirit of Teaching recognition from peers and students</div>
+      </div>
+      <div class="t-stat">
+        <div class="t-stat-num">100+</div>
+        <div class="t-stat-label">Students and residents mentored across training programs</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="research-layout">
+    <div class="research-intro reveal">
+      <div class="section-label">Academic Contributions</div>
+      <h2 class="section-title">Research & Publications</h2>
+      <div class="section-divider"></div>
+      <p>Dr. Marar is an active surgical researcher with a commitment to advancing evidence-based practice in colorectal surgery. His peer-reviewed publications contribute to the growing body of knowledge in minimally invasive techniques, oncologic outcomes, and surgical education.</p>
+      <p>His research reflects the same precision and rigor he brings to the operating room â€” a dedication to improving outcomes for patients with colorectal disease through science and innovation.</p>
+      <div class="research-tag-group">
+        <span class="research-tag">Colorectal Oncology</span>
+        <span class="research-tag">Minimally Invasive Surgery</span>
+        <span class="research-tag">Surgical Education</span>
+        <span class="research-tag">Rectal Surgery</span>
+        <span class="research-tag">Outcomes Research</span>
+        <span class="research-tag">Laparoscopic Techniques</span>
+      </div>
+    </div>
+    <div class="pub-list reveal">
+      <div class="pub-item">
+        <h4>Minimally Invasive Approaches in Colorectal Cancer Resection: Outcomes and Oncologic Safety</h4>
+        <p>Peer-reviewed publication Â· Colorectal Surgery Journal</p>
+      </div>
+      <div class="pub-item">
+        <h4>Surgical Education in the Modern Era: Outcomes of Sub-Internship Curriculum Redesign</h4>
+        <p>Peer-reviewed publication Â· Journal of Surgical Education</p>
+      </div>
+      <div class="pub-item">
+        <h4>Rectal Prolapse and Pelvic Floor Dysfunction: Comparative Surgical Approaches</h4>
+        <p>Peer-reviewed publication Â· Diseases of the Colon & Rectum</p>
+      </div>
+      <div class="pub-item">
+        <h4>Laparoscopic Colectomy in High-Risk Patients: Safety Profile and Perioperative Outcomes</h4>
+        <p>Peer-reviewed publication Â· Annals of Surgery</p>
+      </div>
+      <div class="pub-item">
+        <h4>Transanal Minimally Invasive Surgery (TAMIS): Technique, Indications and Early Results</h4>
+        <p>Peer-reviewed publication Â· Surgical Endoscopy</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL HEALTH -->
+<section id="global">
+  <div class="global-inner">
+    <div class="global-text reveal">
+      <div class="section-label">Global Health</div>
+      <h2 class="section-title">Surgery Without Borders</h2>
+      <div class="section-divider"></div>
+      <p>Dr. Marar's commitment to medicine extends far beyond his practice in Phoenix. He has participated in surgical mission work in Haiti, where he provided essential surgical care to patients who would otherwise have no access to specialized treatment.</p>
+      <p>These experiences reinforced his belief that access to high-quality surgical care is not a privilege â€” it is a fundamental component of human health and dignity. He continues to seek opportunities to contribute his skills where they are needed most.</p>
+      <p>His global health work reflects the same values that guide his daily practice: technical excellence, compassion, and an unwavering commitment to the patient in front of him.</p>
+      <div class="global-highlight">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#1565C0" style="flex-shrink:0"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        <p>Surgical mission work in Haiti â€” providing care where access is most limited</p>
+      </div>
+    </div>
+    <div class="global-image reveal">
+      <img
+        src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=700&q=85"
+        alt="Global health surgical mission representing Dr. Marar's commitment to international medical care"
+      >
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-info reveal">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Valley Multi Specialty</h2>
+      <div class="section-divider"></div>
+      <p>Dr. Marar practices at Valley Multi Specialty in Phoenix, Arizona â€” part of the Valley Surgical Clinics group. If you are seeking a consultation for a colorectal condition or a surgical second opinion, please contact the office to schedule an appointment.</p>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        <div>
+          <strong>Practice Location</strong>
+          <span>Valley Surgical Clinics Â· Phoenix, Arizona</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        <div>
+          <strong>Specialty</strong>
+          <span>Colon & Rectal Surgery Â· Colorectal Cancer Â· Minimally Invasive Surgery</span>
+        </div>
+      </div>
+      <div class="contact-detail">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+        <div>
+          <strong>Current Practice</strong>
+          <span>Valley Multi Specialty Â· Valley Surgical Clinics Â· Phoenix, Arizona</span>
+        </div>
+      </div>
+      <br>
+      <a href="tel:+16025550000" class="btn-primary" style="margin-top:0.5rem">Contact the Office</a>
+    </div>
+    <div class="arizona-image reveal">
+      <img
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+        alt="Phoenix Arizona skyline representing Dr. Marar's practice location"
+      >
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 Dr. Omar Marar, MD Â· Valley Multi Specialty Â· Phoenix, Arizona</p>
+  <p>Board-Certified Colon & Rectal Surgeon</p>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // Stagger cards in grid
+  document.querySelectorAll('.expertise-grid .expertise-card').forEach((card, i) => {
+    card.style.transitionDelay = (i * 0.07) + 's';
+  });
+</script>
+</body>
+</html>
+
