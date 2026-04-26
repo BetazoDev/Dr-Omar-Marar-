@@ -1,0 +1,811 @@
+{
+  "version": "0.4",
+  "title": "Dr Omar Marar - Home (Editable)",
+  "type": "page",
+  "content": [
+    {
+      "id": "th4kb23",
+      "elType": "section",
+      "settings": {
+        "_title": "Global Styles"
+      },
+      "elements": [
+        {
+          "id": "jvh2xpl",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "ise19ne",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');\r\n\r\n:root {\r\n  --primary: #1290F5;\r\n  --primary-hover: #0E7CE3;\r\n  --text-dark: #0A1C3A;\r\n  --text-gray: #64748B;\r\n  --bg-light: #F8FAFC;\r\n  --bg-white: #FFFFFF;\r\n  --border-color: #E2E8F0;\r\n  \r\n  --font-heading: 'Playfair Display', serif;\r\n  --font-body: 'Inter', sans-serif;\r\n  \r\n  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);\r\n  --shadow-md: 0 10px 30px rgba(18, 144, 245, 0.1);\r\n  --shadow-lg: 0 20px 40px rgba(18, 144, 245, 0.15);\r\n  --radius-lg: 16px;\r\n  --radius-full: 9999px;\r\n  --transition: all 0.3s ease;\r\n}\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: var(--font-body);\r\n  color: var(--text-gray);\r\n  line-height: 1.6;\r\n  background-color: var(--bg-white);\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\nh1, h2, h3, h4, h5, h6 {\r\n  font-family: var(--font-heading);\r\n  color: var(--text-dark);\r\n  font-weight: 700;\r\n  line-height: 1.2;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: inherit;\r\n  transition: var(--transition);\r\n}\r\n\r\nimg {\r\n  max-width: 100%;\r\n  height: auto;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  max-width: 1200px;\r\n  margin: 0 auto;\r\n  padding: 0 20px;\r\n}\r\n\r\n/* Typography Helpers */\r\n.section-subtitle {\r\n  color: var(--primary);\r\n  font-weight: 500;\r\n  background: rgba(18, 144, 245, 0.1);\r\n  padding: 6px 16px;\r\n  border-radius: var(--radius-full);\r\n  display: inline-block;\r\n  margin-bottom: 16px;\r\n  font-size: 14px;\r\n}\r\n\r\n.section-title {\r\n  font-size: 42px;\r\n  margin-bottom: 24px;\r\n}\r\n\r\n.text-center {\r\n  text-align: center;\r\n}\r\n\r\n/* Buttons */\r\n.btn {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 12px 28px;\r\n  border-radius: var(--radius-full);\r\n  font-weight: 500;\r\n  font-size: 16px;\r\n  cursor: pointer;\r\n  border: none;\r\n  transition: var(--transition);\r\n  gap: 8px;\r\n}\r\n\r\n.btn-primary {\r\n  background: var(--primary);\r\n  color: white;\r\n}\r\n\r\n.btn-primary:hover {\r\n  background: var(--primary-hover);\r\n  box-shadow: var(--shadow-md);\r\n  transform: translateY(-2px);\r\n}\r\n\r\n.btn-icon {\r\n  width: 20px;\r\n  height: 20px;\r\n  fill: currentColor;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  padding: 20px 0;\r\n  z-index: 100;\r\n}\r\n\r\n.nav-wrapper {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n}\r\n\r\n.logo {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  font-family: var(--font-heading);\r\n  font-size: 24px;\r\n  color: var(--text-dark);\r\n}\r\n\r\n.logo svg {\r\n  width: 32px;\r\n  height: 32px;\r\n  fill: var(--primary);\r\n}\r\n\r\n.nav-links {\r\n  display: flex;\r\n  gap: 30px;\r\n}\r\n\r\n.hamburger {\r\n  display: none;\r\n  flex-direction: column;\r\n  gap: 5px;\r\n  cursor: pointer;\r\n  z-index: 101;\r\n}\r\n\r\n.hamburger span {\r\n  display: block;\r\n  width: 25px;\r\n  height: 3px;\r\n  background-color: var(--primary);\r\n  border-radius: 3px;\r\n  transition: var(--transition);\r\n}\r\n\r\n.nav-links a {\r\n  font-weight: 500;\r\n  color: var(--text-dark);\r\n}\r\n\r\n.nav-links a:hover, .nav-links a.active {\r\n  color: var(--primary);\r\n}\r\n\r\n.nav-actions {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 15px;\r\n}\r\n\r\n.action-icon {\r\n  width: 44px;\r\n  height: 44px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  border-radius: 50%;\r\n  background: white;\r\n  box-shadow: var(--shadow-sm);\r\n  color: var(--text-dark);\r\n}\r\n\r\n/* Hero Section */\r\n.hero {\r\n  padding: 160px 0 100px;\r\n  background: linear-gradient(135deg, #f8fbfc 0%, #eef6fd 100%);\r\n  position: relative;\r\n  overflow: hidden;\r\n}\r\n\r\n.hero::after {\r\n  content: '';\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100px;\r\n  background: white;\r\n  border-top-left-radius: 50% 100px;\r\n  border-top-right-radius: 50% 100px;\r\n}\r\n\r\n.hero-grid {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 60px;\r\n  align-items: center;\r\n  position: relative;\r\n  z-index: 10;\r\n}\r\n\r\n.hero-title {\r\n  font-size: 56px;\r\n  margin-bottom: 24px;\r\n}\r\n\r\n.hero-text {\r\n  font-size: 18px;\r\n  margin-bottom: 40px;\r\n}\r\n\r\n.hero-image {\r\n  position: relative;\r\n  z-index: 2;\r\n  height: 600px;\r\n  display: flex;\r\n  align-items: flex-end;\r\n  justify-content: center;\r\n}\r\n\r\n.hero-image img {\r\n  position: relative;\r\n  z-index: 2;\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: contain;\r\n  object-position: bottom center;\r\n  border-radius: 0;\r\n  box-shadow: none;\r\n  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));\r\n}\r\n\r\n.hero-blob {\r\n  position: absolute;\r\n  right: -5%;\r\n  top: 45%;\r\n  transform: translateY(-50%);\r\n  width: 100%;\r\n  aspect-ratio: 1;\r\n  background: var(--primary);\r\n  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;\r\n  z-index: 1;\r\n}\r\n\r\n.play-btn {\r\n  position: absolute;\r\n  top: 20%;\r\n  left: 10%;\r\n  width: 80px;\r\n  height: 80px;\r\n  background: white;\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  box-shadow: var(--shadow-md);\r\n  color: var(--primary);\r\n  cursor: pointer;\r\n  z-index: 5;\r\n}\r\n\r\n.play-btn svg {\r\n  width: 30px;\r\n  height: 30px;\r\n  fill: currentColor;\r\n  margin-left: 5px;\r\n}\r\n\r\n/* Appointment Form */\r\n.appointment-form-wrapper {\r\n  background: white;\r\n  border-radius: var(--radius-full);\r\n  padding: 20px 40px;\r\n  box-shadow: var(--shadow-lg);\r\n  margin-top: -50px;\r\n  position: relative;\r\n  z-index: 20;\r\n  max-width: 1000px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 80px;\r\n}\r\n\r\n.appt-form {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr 1fr 1fr auto;\r\n  gap: 20px;\r\n  align-items: end;\r\n}\r\n\r\n.form-group label {\r\n  display: block;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  color: var(--text-dark);\r\n  margin-bottom: 8px;\r\n}\r\n\r\n.form-control {\r\n  width: 100%;\r\n  padding: 14px 20px;\r\n  border: 1px solid var(--border-color);\r\n  border-radius: var(--radius-full);\r\n  font-family: var(--font-body);\r\n  font-size: 15px;\r\n  color: var(--text-dark);\r\n  background: transparent;\r\n  outline: none;\r\n  transition: var(--transition);\r\n}\r\n\r\n.form-control:focus {\r\n  border-color: var(--primary);\r\n  box-shadow: 0 0 0 3px rgba(18, 144, 245, 0.1);\r\n}\r\n\r\n/* Services Section */\r\n.services-section {\r\n  padding: 80px 0;\r\n}\r\n\r\n.services-grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 30px;\r\n  margin-top: 50px;\r\n}\r\n\r\n.service-card {\r\n  background: white;\r\n  border-radius: 24px;\r\n  padding: 40px 30px;\r\n  text-align: center;\r\n  box-shadow: var(--shadow-sm);\r\n  border: 1px solid var(--border-color);\r\n  transition: var(--transition);\r\n  cursor: pointer;\r\n}\r\n\r\n.service-card:hover {\r\n  transform: translateY(-10px);\r\n  box-shadow: var(--shadow-md);\r\n  border-color: var(--primary);\r\n}\r\n\r\n.service-icon {\r\n  width: 80px;\r\n  height: 80px;\r\n  background: var(--primary);\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin: 0 auto 24px;\r\n  color: white;\r\n}\r\n\r\n.service-icon svg {\r\n  width: 36px;\r\n  height: 36px;\r\n  fill: currentColor;\r\n}\r\n\r\n.service-card h3 {\r\n  font-size: 24px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.service-arrow {\r\n  margin-top: 24px;\r\n  color: var(--primary);\r\n  display: inline-flex;\r\n}\r\n\r\n/* About Section */\r\n.about-section {\r\n  padding: 100px 0;\r\n  overflow: hidden;\r\n}\r\n\r\n.about-grid {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 80px;\r\n  align-items: center;\r\n}\r\n\r\n.about-image {\r\n  position: relative;\r\n}\r\n\r\n.about-image-circle {\r\n  width: 100%;\r\n  aspect-ratio: 1;\r\n  border-radius: 50%;\r\n  overflow: hidden;\r\n  border: 15px solid white;\r\n  box-shadow: var(--shadow-lg);\r\n}\r\n\r\n.about-image-circle img {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n}\r\n\r\n.experience-badge {\r\n  position: absolute;\r\n  bottom: 0;\r\n  right: 0;\r\n  background: white;\r\n  padding: 20px;\r\n  border-radius: 20px;\r\n  box-shadow: var(--shadow-lg);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 16px;\r\n}\r\n\r\n.exp-icon {\r\n  width: 50px;\r\n  height: 50px;\r\n  background: var(--primary);\r\n  border-radius: 50%;\r\n  color: white;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.exp-icon svg {\r\n  width: 24px;\r\n  height: 24px;\r\n  fill: currentColor;\r\n}\r\n\r\n.exp-text h4 {\r\n  font-size: 28px;\r\n  margin-bottom: 0;\r\n}\r\n\r\n.exp-text span {\r\n  font-size: 14px;\r\n}\r\n\r\n.signature-block {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 30px;\r\n  margin-top: 40px;\r\n}\r\n\r\n.sig-name {\r\n  font-family: var(--font-heading);\r\n  font-size: 20px;\r\n  color: var(--text-dark);\r\n  font-weight: 700;\r\n}\r\n\r\n/* How We Work */\r\n.process-section {\r\n  padding: 80px 0;\r\n  background: var(--bg-light);\r\n}\r\n\r\n.process-grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(4, 1fr);\r\n  gap: 30px;\r\n  margin-top: 60px;\r\n  position: relative;\r\n}\r\n\r\n.process-grid::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 80px;\r\n  left: 10%;\r\n  width: 80%;\r\n  height: 2px;\r\n  background: repeating-linear-gradient(90deg, var(--primary) 0, var(--primary) 10px, transparent 10px, transparent 20px);\r\n  z-index: 1;\r\n}\r\n\r\n.process-card {\r\n  text-align: center;\r\n  position: relative;\r\n  z-index: 2;\r\n}\r\n\r\n.process-img {\r\n  width: 160px;\r\n  height: 160px;\r\n  border-radius: 50%;\r\n  margin: 0 auto 30px;\r\n  position: relative;\r\n  overflow: visible;\r\n}\r\n\r\n.process-img img {\r\n  width: 100%;\r\n  height: 100%;\r\n  border-radius: 50%;\r\n  object-fit: cover;\r\n  border: 10px solid var(--bg-light);\r\n}\r\n\r\n.process-num {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  width: 40px;\r\n  height: 40px;\r\n  background: var(--primary);\r\n  color: white;\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-weight: 700;\r\n  font-size: 18px;\r\n  border: 4px solid var(--bg-light);\r\n}\r\n\r\n.process-card h3 {\r\n  font-size: 20px;\r\n  margin-bottom: 12px;\r\n}\r\n\r\n/* Testimonials */\r\n.testimonials-section {\r\n  padding: 100px 0;\r\n}\r\n\r\n.testi-grid {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 40px;\r\n  margin-top: 60px;\r\n}\r\n\r\n.testi-card {\r\n  background: white;\r\n  border-radius: 24px;\r\n  padding: 50px 40px 40px;\r\n  box-shadow: var(--shadow-sm);\r\n  border: 1px solid var(--border-color);\r\n  position: relative;\r\n  margin-top: 30px;\r\n}\r\n\r\n.quote-icon {\r\n  position: absolute;\r\n  top: -30px;\r\n  left: 40px;\r\n  width: 60px;\r\n  height: 60px;\r\n  background: var(--primary);\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: white;\r\n  box-shadow: 0 10px 20px rgba(18, 144, 245, 0.3);\r\n}\r\n\r\n.quote-icon svg {\r\n  width: 30px;\r\n  height: 30px;\r\n  fill: currentColor;\r\n}\r\n\r\n.stars {\r\n  color: #FACC15;\r\n  margin-bottom: 20px;\r\n  font-size: 18px;\r\n}\r\n\r\n.testi-text {\r\n  font-size: 16px;\r\n  margin-bottom: 30px;\r\n}\r\n\r\n.testi-author {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 16px;\r\n}\r\n\r\n.author-img {\r\n  width: 60px;\r\n  height: 60px;\r\n  border-radius: 50%;\r\n  object-fit: cover;\r\n}\r\n\r\n.author-info h4 {\r\n  font-size: 18px;\r\n  margin-bottom: 4px;\r\n}\r\n\r\n/* CTA Banner */\r\n.cta-banner {\r\n  background: var(--primary);\r\n  border-radius: 30px;\r\n  padding: 60px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  color: white;\r\n  margin: 100px 0;\r\n  position: relative;\r\n}\r\n\r\n.cta-banner::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDAiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48L3N2Zz4=') repeat;\r\n  opacity: 0.5;\r\n}\r\n\r\n.cta-content {\r\n  position: relative;\r\n  z-index: 2;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 30px;\r\n}\r\n\r\n.cta-icon {\r\n  width: 80px;\r\n  height: 80px;\r\n  background: white;\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: var(--primary);\r\n}\r\n\r\n.cta-icon svg {\r\n  width: 40px;\r\n  height: 40px;\r\n  fill: currentColor;\r\n}\r\n\r\n.cta-text h4 {\r\n  font-size: 24px;\r\n  color: white;\r\n  margin-bottom: 5px;\r\n  font-family: var(--font-body);\r\n  font-weight: 500;\r\n}\r\n\r\n.cta-text h2 {\r\n  font-size: 48px;\r\n  color: white;\r\n}\r\n\r\n.cta-image {\r\n  position: absolute;\r\n  right: 50px;\r\n  top: -30px;\r\n  bottom: -30px;\r\n  width: 250px;\r\n  z-index: 2;\r\n}\r\n\r\n.cta-image img {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  border-radius: 50%;\r\n  border: 10px solid var(--primary);\r\n  box-shadow: var(--shadow-md);\r\n}\r\n\r\n/* Blog */\r\n.blog-section {\r\n  padding: 80px 0;\r\n}\r\n\r\n.blog-grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 30px;\r\n  margin-top: 50px;\r\n}\r\n\r\n.blog-card {\r\n  background: white;\r\n  border-radius: 20px;\r\n  overflow: hidden;\r\n  box-shadow: var(--shadow-sm);\r\n  border: 1px solid var(--border-color);\r\n}\r\n\r\n.blog-img {\r\n  position: relative;\r\n  height: 240px;\r\n}\r\n\r\n.blog-img img {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n}\r\n\r\n.blog-tag {\r\n  position: absolute;\r\n  top: 20px;\r\n  left: 20px;\r\n  background: var(--primary);\r\n  color: white;\r\n  padding: 6px 16px;\r\n  border-radius: var(--radius-full);\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n}\r\n\r\n.blog-content {\r\n  padding: 30px;\r\n}\r\n\r\n.blog-meta {\r\n  font-size: 14px;\r\n  margin-bottom: 12px;\r\n}\r\n\r\n.blog-content h3 {\r\n  font-size: 22px;\r\n  margin-bottom: 24px;\r\n}\r\n\r\n.blog-arrow {\r\n  width: 40px;\r\n  height: 40px;\r\n  background: var(--primary);\r\n  color: white;\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  transition: var(--transition);\r\n}\r\n\r\n.blog-card:hover .blog-arrow {\r\n  background: var(--text-dark);\r\n}\r\n\r\n.blog-arrow svg {\r\n  width: 20px;\r\n  height: 20px;\r\n  fill: currentColor;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  background: var(--bg-light);\r\n  padding: 80px 0 30px;\r\n  margin-top: 80px;\r\n}\r\n\r\n.footer-grid {\r\n  display: grid;\r\n  grid-template-columns: 2fr 1fr 1fr 1.5fr;\r\n  gap: 40px;\r\n  margin-bottom: 60px;\r\n}\r\n\r\n.footer-col h4 {\r\n  font-size: 20px;\r\n  margin-bottom: 24px;\r\n}\r\n\r\n.footer-col p {\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.footer-links {\r\n  list-style: none;\r\n}\r\n\r\n.footer-links li {\r\n  margin-bottom: 12px;\r\n}\r\n\r\n.footer-links a:hover {\r\n  color: var(--primary);\r\n}\r\n\r\n.social-links {\r\n  display: flex;\r\n  gap: 10px;\r\n}\r\n\r\n.social-link {\r\n  width: 40px;\r\n  height: 40px;\r\n  border-radius: 50%;\r\n  background: white;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: var(--text-dark);\r\n  box-shadow: var(--shadow-sm);\r\n}\r\n\r\n.social-link:hover {\r\n  background: var(--primary);\r\n  color: white;\r\n}\r\n\r\n.social-link svg {\r\n  width: 18px;\r\n  height: 18px;\r\n  fill: currentColor;\r\n}\r\n\r\n.contact-list {\r\n  list-style: none;\r\n}\r\n\r\n.contact-item {\r\n  display: flex;\r\n  align-items: flex-start;\r\n  gap: 12px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.contact-item svg {\r\n  width: 20px;\r\n  height: 20px;\r\n  fill: var(--primary);\r\n  flex-shrink: 0;\r\n  margin-top: 4px;\r\n}\r\n\r\n.footer-bottom {\r\n  padding-top: 30px;\r\n  border-top: 1px solid var(--border-color);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  font-size: 14px;\r\n}\r\n\r\n.footer-bottom-links {\r\n  display: flex;\r\n  gap: 20px;\r\n}\r\n\r\n/* Responsive */\r\n@media (max-width: 1024px) {\r\n  .hero-grid, .about-grid, .testi-grid {\r\n    grid-template-columns: 1fr;\r\n  }\r\n  \r\n  .services-grid, .blog-grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  \r\n  .process-grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  \r\n  .process-grid::before {\r\n    display: none;\r\n  }\r\n  \r\n  .footer-grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  \r\n  .appt-form {\r\n    grid-template-columns: 1fr 1fr;\r\n  }\r\n  \r\n  .appt-form button {\r\n    grid-column: span 2;\r\n  }\r\n  \r\n  .cta-image {\r\n    display: none;\r\n  }\r\n  \r\n  .cta-banner {\r\n    flex-direction: column;\r\n    text-align: center;\r\n    padding: 40px 20px;\r\n  }\r\n  \r\n  .cta-content {\r\n    flex-direction: column;\r\n    text-align: center;\r\n    margin-bottom: 30px;\r\n  }\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .hamburger {\r\n    display: flex;\r\n  }\r\n\r\n  .nav-links {\r\n    position: absolute;\r\n    top: 100%;\r\n    left: 0;\r\n    width: 100%;\r\n    background: white;\r\n    flex-direction: column;\r\n    padding: 20px 0;\r\n    box-shadow: var(--shadow-md);\r\n    transform: translateY(-20px);\r\n    opacity: 0;\r\n    pointer-events: none;\r\n    transition: var(--transition);\r\n  }\r\n  \r\n  .nav-links.active {\r\n    transform: translateY(0);\r\n    opacity: 1;\r\n    pointer-events: auto;\r\n  }\r\n  \r\n  .nav-links a {\r\n    padding: 10px 20px;\r\n    width: 100%;\r\n    display: block;\r\n  }\r\n  \r\n  .nav-actions {\r\n    display: none; /* Hide top-right actions on small screens to simplify */\r\n  }\r\n  \r\n  .hero-title {\r\n    font-size: 40px;\r\n  }\r\n  \r\n  .hero-image {\r\n    height: 400px;\r\n  }\r\n  \r\n  .services-grid, .blog-grid, .process-grid, .footer-grid {\r\n    grid-template-columns: 1fr;\r\n  }\r\n  \r\n  .appt-form {\r\n    grid-template-columns: 1fr;\r\n  }\r\n  \r\n  .appt-form button {\r\n    grid-column: span 1;\r\n  }\r\n}\r\n\r\n/* Scroll Animations */\r\n.reveal-hidden {\r\n  opacity: 0;\r\n  transform: translateY(30px);\r\n  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);\r\n}\r\n\r\n.reveal-visible {\r\n  opacity: 1;\r\n  transform: translateY(0);\r\n}\r\n\n</style>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5hf8xg9",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "HEADER"
+      },
+      "elements": [
+        {
+          "id": "693puoq",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "rasmqim",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Book Appointment",
+                "link": {
+                  "url": "#"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mv1ex45",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "hero"
+      },
+      "elements": [
+        {
+          "id": "sl2tyuc",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_title": "hero-content"
+          },
+          "elements": [
+            {
+              "id": "qfy7uys",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Trusted Physician in Phoenix, Arizona",
+                "header_size": "h1"
+              }
+            },
+            {
+              "id": "2arsgxz",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Dr. Omar Marar brings over two decades of dedicated medical experience to the Phoenix community. Our practice combines cutting-edge medical knowledge with a warm, patient-centered approach to ensure you and your family receive the highest quality healthcare in the Valley of the Sun."
+              }
+            },
+            {
+              "id": "5tjzm7k",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Schedule Consultation",
+                "link": {
+                  "url": "#"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "60l8esr",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_title": "hero-image"
+          },
+          "elements": [
+            {
+              "id": "6k76p0i",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "Imgs/Omar%20Marar-01-Photoroom.png"
+                },
+                "alt": "Dr. Omar Marar"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w1pje2b",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "container"
+      },
+      "elements": [
+        {
+          "id": "7s2yedk",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "e6qppca",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<button type=\"submit\" class=\"btn btn-primary\">Send Request</button>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r94gunf",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "services-section container text-center"
+      },
+      "elements": [
+        {
+          "id": "8pjs8rr",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_title": "service-card"
+          },
+          "elements": [
+            {
+              "id": "y2gjk8b",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "General Medicine",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "hguo5ft",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Complete primary care services including routine exams, health screenings, and management of chronic conditions for patients of all ages in Phoenix."
+              }
+            }
+          ]
+        },
+        {
+          "id": "8f5k2ka",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_title": "service-card"
+          },
+          "elements": [
+            {
+              "id": "tub8o21",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Preventive Care",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "ub5w88w",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Stay ahead of health issues with our proactive preventive care programs, vaccinations, wellness checks, and personalized health planning."
+              }
+            }
+          ]
+        },
+        {
+          "id": "lj8bhxj",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_title": "service-card"
+          },
+          "elements": [
+            {
+              "id": "esa4hc0",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Patient Consultation",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "fkdu1xi",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Thorough one-on-one consultations where Dr. Marar takes the time to understand your concerns and develop comprehensive treatment plans."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hvopl7c",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "about-section container"
+      },
+      "elements": [
+        {
+          "id": "9xk34ci",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_title": "about-image"
+          },
+          "elements": [
+            {
+              "id": "945g5v6",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "20+",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "3hh8u90",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "Imgs/Omar%20Marar-02.jpg"
+                },
+                "alt": "Dr. Omar Marar Clinic"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fv5kayw",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_title": "about-content"
+          },
+          "elements": [
+            {
+              "id": "gmwbulj",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Your Health & Well-Being Is Our Priority",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "bvnw6y3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "With over 20 years of medical practice, Dr. Omar Marar has established himself as a trusted healthcare provider in the Phoenix metropolitan area."
+              }
+            },
+            {
+              "id": "2ckgge1",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Discover More",
+                "link": {
+                  "url": "about.html"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daf0qin",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "process-section text-center"
+      },
+      "elements": [
+        {
+          "id": "8d3j7r4",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_title": "process-card"
+          },
+          "elements": [
+            {
+              "id": "0g7ldjo",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Schedule Appointment",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "rt239ud",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                },
+                "alt": "Schedule"
+              }
+            },
+            {
+              "id": "3wfnnf2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Book your visit online or call our Phoenix office. We offer flexible scheduling."
+              }
+            }
+          ]
+        },
+        {
+          "id": "f7zg56n",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_title": "process-card"
+          },
+          "elements": [
+            {
+              "id": "hw1g7vj",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Meet Dr. Marar",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "hwkd9j5",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                },
+                "alt": "Meet"
+              }
+            },
+            {
+              "id": "358kxvp",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Enjoy a thorough consultation where Dr. Marar listens to your concerns."
+              }
+            }
+          ]
+        },
+        {
+          "id": "dicwbwr",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_title": "process-card"
+          },
+          "elements": [
+            {
+              "id": "aczq9hn",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Receive Treatment",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "u3z3h5o",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                },
+                "alt": "Treatment"
+              }
+            },
+            {
+              "id": "fra4ljo",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Get a personalized treatment plan backed by the latest medical research."
+              }
+            }
+          ]
+        },
+        {
+          "id": "bpbcu91",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_title": "process-card"
+          },
+          "elements": [
+            {
+              "id": "lh87zvc",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Ongoing Care",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "uqxpnjd",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                },
+                "alt": "Care"
+              }
+            },
+            {
+              "id": "8u5bjjw",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "We provide continuous follow-up care to ensure your health stays on track."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13cupgi",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "testimonials-section container"
+      },
+      "elements": [
+        {
+          "id": "0i9sr63",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_title": "testi-card"
+          },
+          "elements": [
+            {
+              "id": "yp6v60j",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Sarah M.",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "kksjinw",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\"Dr. Marar is hands down the best physician I’ve had in Phoenix. He takes the time to actually listen and explains everything clearly. My whole family sees him now.\""
+              }
+            }
+          ]
+        },
+        {
+          "id": "t0zjmd6",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "_title": "testi-card"
+          },
+          "elements": [
+            {
+              "id": "lfrbnle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "James R.",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "vs4gcaz",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\"After years of seeing different doctors in the Valley, I finally found one who truly cares. Dr. Marar’s preventive care approach has transformed my health completely.\""
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "x5h7nkz",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "container"
+      },
+      "elements": [
+        {
+          "id": "olme9mw",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "d1dsbwl",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Available 24/7",
+                "header_size": "h4"
+              }
+            },
+            {
+              "id": "3ghxd5w",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "(480) 555-0100",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "jm8pw9u",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Make Appointment",
+                "link": {
+                  "url": "tel:4805550100"
+                }
+              }
+            },
+            {
+              "id": "21sreak",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "Imgs/Omar%20Marar-08.jpg"
+                },
+                "alt": "Doctor Contact"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oa1w25p",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "blog-section container"
+      },
+      "elements": [
+        {
+          "id": "z03akyx",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_title": "blog-card"
+          },
+          "elements": [
+            {
+              "id": "e97d051",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Staying Healthy in the Arizona Heat: Essential Summer Tips",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "vdoz79y",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1584515933487-779824d29309?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                },
+                "alt": "Arizona Heat"
+              }
+            }
+          ]
+        },
+        {
+          "id": "y6lop0l",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_title": "blog-card"
+          },
+          "elements": [
+            {
+              "id": "pokesbd",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Why Annual Check-Ups Matter: A Phoenix Doctor’s Perspective",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "iic8yoe",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                },
+                "alt": "Checkup"
+              }
+            }
+          ]
+        },
+        {
+          "id": "wrx4ht8",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33,
+            "_title": "blog-card"
+          },
+          "elements": [
+            {
+              "id": "09azhh6",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Desert Living & Your Health: Navigating Allergies",
+                "header_size": "h3"
+              }
+            },
+            {
+              "id": "b0ty6v5",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                },
+                "alt": "Desert Living"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kv3yag9",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "content_width": "full",
+        "_title": "FOOTER"
+      },
+      "elements": [
+        {
+          "id": "f3mak8p",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_title": "footer-col"
+          },
+          "elements": [
+            {
+              "id": "1ae1798",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "Providing compassionate, expert medical care to the Phoenix, Arizona community for over 20 years. Your health is our mission, from the heart of the Sonoran Desert."
+              }
+            }
+          ]
+        },
+        {
+          "id": "ywziajn",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_title": "footer-col"
+          },
+          "elements": [
+            {
+              "id": "poh5sfx",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Quick Links",
+                "header_size": "h4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "66xmcgi",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_title": "footer-col"
+          },
+          "elements": [
+            {
+              "id": "u6xsgv8",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Services",
+                "header_size": "h4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "5k8gv1k",
+          "elType": "column",
+          "settings": {
+            "_column_size": 25,
+            "_title": "footer-col"
+          },
+          "elements": [
+            {
+              "id": "u29qm4b",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Contact Info",
+                "header_size": "h4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "custom_css": "@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');\r\n\r\n:root {\r\n  --primary: #1290F5;\r\n  --primary-hover: #0E7CE3;\r\n  --text-dark: #0A1C3A;\r\n  --text-gray: #64748B;\r\n  --bg-light: #F8FAFC;\r\n  --bg-white: #FFFFFF;\r\n  --border-color: #E2E8F0;\r\n  \r\n  --font-heading: 'Playfair Display', serif;\r\n  --font-body: 'Inter', sans-serif;\r\n  \r\n  --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);\r\n  --shadow-md: 0 10px 30px rgba(18, 144, 245, 0.1);\r\n  --shadow-lg: 0 20px 40px rgba(18, 144, 245, 0.15);\r\n  --radius-lg: 16px;\r\n  --radius-full: 9999px;\r\n  --transition: all 0.3s ease;\r\n}\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: var(--font-body);\r\n  color: var(--text-gray);\r\n  line-height: 1.6;\r\n  background-color: var(--bg-white);\r\n  -webkit-font-smoothing: antialiased;\r\n}\r\n\r\nh1, h2, h3, h4, h5, h6 {\r\n  font-family: var(--font-heading);\r\n  color: var(--text-dark);\r\n  font-weight: 700;\r\n  line-height: 1.2;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: inherit;\r\n  transition: var(--transition);\r\n}\r\n\r\nimg {\r\n  max-width: 100%;\r\n  height: auto;\r\n}\r\n\r\n.container {\r\n  width: 100%;\r\n  max-width: 1200px;\r\n  margin: 0 auto;\r\n  padding: 0 20px;\r\n}\r\n\r\n/* Typography Helpers */\r\n.section-subtitle {\r\n  color: var(--primary);\r\n  font-weight: 500;\r\n  background: rgba(18, 144, 245, 0.1);\r\n  padding: 6px 16px;\r\n  border-radius: var(--radius-full);\r\n  display: inline-block;\r\n  margin-bottom: 16px;\r\n  font-size: 14px;\r\n}\r\n\r\n.section-title {\r\n  font-size: 42px;\r\n  margin-bottom: 24px;\r\n}\r\n\r\n.text-center {\r\n  text-align: center;\r\n}\r\n\r\n/* Buttons */\r\n.btn {\r\n  display: inline-flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 12px 28px;\r\n  border-radius: var(--radius-full);\r\n  font-weight: 500;\r\n  font-size: 16px;\r\n  cursor: pointer;\r\n  border: none;\r\n  transition: var(--transition);\r\n  gap: 8px;\r\n}\r\n\r\n.btn-primary {\r\n  background: var(--primary);\r\n  color: white;\r\n}\r\n\r\n.btn-primary:hover {\r\n  background: var(--primary-hover);\r\n  box-shadow: var(--shadow-md);\r\n  transform: translateY(-2px);\r\n}\r\n\r\n.btn-icon {\r\n  width: 20px;\r\n  height: 20px;\r\n  fill: currentColor;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  padding: 20px 0;\r\n  z-index: 100;\r\n}\r\n\r\n.nav-wrapper {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n}\r\n\r\n.logo {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 10px;\r\n  font-family: var(--font-heading);\r\n  font-size: 24px;\r\n  color: var(--text-dark);\r\n}\r\n\r\n.logo svg {\r\n  width: 32px;\r\n  height: 32px;\r\n  fill: var(--primary);\r\n}\r\n\r\n.nav-links {\r\n  display: flex;\r\n  gap: 30px;\r\n}\r\n\r\n.hamburger {\r\n  display: none;\r\n  flex-direction: column;\r\n  gap: 5px;\r\n  cursor: pointer;\r\n  z-index: 101;\r\n}\r\n\r\n.hamburger span {\r\n  display: block;\r\n  width: 25px;\r\n  height: 3px;\r\n  background-color: var(--primary);\r\n  border-radius: 3px;\r\n  transition: var(--transition);\r\n}\r\n\r\n.nav-links a {\r\n  font-weight: 500;\r\n  color: var(--text-dark);\r\n}\r\n\r\n.nav-links a:hover, .nav-links a.active {\r\n  color: var(--primary);\r\n}\r\n\r\n.nav-actions {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 15px;\r\n}\r\n\r\n.action-icon {\r\n  width: 44px;\r\n  height: 44px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  border-radius: 50%;\r\n  background: white;\r\n  box-shadow: var(--shadow-sm);\r\n  color: var(--text-dark);\r\n}\r\n\r\n/* Hero Section */\r\n.hero {\r\n  padding: 160px 0 100px;\r\n  background: linear-gradient(135deg, #f8fbfc 0%, #eef6fd 100%);\r\n  position: relative;\r\n  overflow: hidden;\r\n}\r\n\r\n.hero::after {\r\n  content: '';\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100px;\r\n  background: white;\r\n  border-top-left-radius: 50% 100px;\r\n  border-top-right-radius: 50% 100px;\r\n}\r\n\r\n.hero-grid {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 60px;\r\n  align-items: center;\r\n  position: relative;\r\n  z-index: 10;\r\n}\r\n\r\n.hero-title {\r\n  font-size: 56px;\r\n  margin-bottom: 24px;\r\n}\r\n\r\n.hero-text {\r\n  font-size: 18px;\r\n  margin-bottom: 40px;\r\n}\r\n\r\n.hero-image {\r\n  position: relative;\r\n  z-index: 2;\r\n  height: 600px;\r\n  display: flex;\r\n  align-items: flex-end;\r\n  justify-content: center;\r\n}\r\n\r\n.hero-image img {\r\n  position: relative;\r\n  z-index: 2;\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: contain;\r\n  object-position: bottom center;\r\n  border-radius: 0;\r\n  box-shadow: none;\r\n  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));\r\n}\r\n\r\n.hero-blob {\r\n  position: absolute;\r\n  right: -5%;\r\n  top: 45%;\r\n  transform: translateY(-50%);\r\n  width: 100%;\r\n  aspect-ratio: 1;\r\n  background: var(--primary);\r\n  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;\r\n  z-index: 1;\r\n}\r\n\r\n.play-btn {\r\n  position: absolute;\r\n  top: 20%;\r\n  left: 10%;\r\n  width: 80px;\r\n  height: 80px;\r\n  background: white;\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  box-shadow: var(--shadow-md);\r\n  color: var(--primary);\r\n  cursor: pointer;\r\n  z-index: 5;\r\n}\r\n\r\n.play-btn svg {\r\n  width: 30px;\r\n  height: 30px;\r\n  fill: currentColor;\r\n  margin-left: 5px;\r\n}\r\n\r\n/* Appointment Form */\r\n.appointment-form-wrapper {\r\n  background: white;\r\n  border-radius: var(--radius-full);\r\n  padding: 20px 40px;\r\n  box-shadow: var(--shadow-lg);\r\n  margin-top: -50px;\r\n  position: relative;\r\n  z-index: 20;\r\n  max-width: 1000px;\r\n  margin-left: auto;\r\n  margin-right: auto;\r\n  margin-bottom: 80px;\r\n}\r\n\r\n.appt-form {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr 1fr 1fr auto;\r\n  gap: 20px;\r\n  align-items: end;\r\n}\r\n\r\n.form-group label {\r\n  display: block;\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n  color: var(--text-dark);\r\n  margin-bottom: 8px;\r\n}\r\n\r\n.form-control {\r\n  width: 100%;\r\n  padding: 14px 20px;\r\n  border: 1px solid var(--border-color);\r\n  border-radius: var(--radius-full);\r\n  font-family: var(--font-body);\r\n  font-size: 15px;\r\n  color: var(--text-dark);\r\n  background: transparent;\r\n  outline: none;\r\n  transition: var(--transition);\r\n}\r\n\r\n.form-control:focus {\r\n  border-color: var(--primary);\r\n  box-shadow: 0 0 0 3px rgba(18, 144, 245, 0.1);\r\n}\r\n\r\n/* Services Section */\r\n.services-section {\r\n  padding: 80px 0;\r\n}\r\n\r\n.services-grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 30px;\r\n  margin-top: 50px;\r\n}\r\n\r\n.service-card {\r\n  background: white;\r\n  border-radius: 24px;\r\n  padding: 40px 30px;\r\n  text-align: center;\r\n  box-shadow: var(--shadow-sm);\r\n  border: 1px solid var(--border-color);\r\n  transition: var(--transition);\r\n  cursor: pointer;\r\n}\r\n\r\n.service-card:hover {\r\n  transform: translateY(-10px);\r\n  box-shadow: var(--shadow-md);\r\n  border-color: var(--primary);\r\n}\r\n\r\n.service-icon {\r\n  width: 80px;\r\n  height: 80px;\r\n  background: var(--primary);\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin: 0 auto 24px;\r\n  color: white;\r\n}\r\n\r\n.service-icon svg {\r\n  width: 36px;\r\n  height: 36px;\r\n  fill: currentColor;\r\n}\r\n\r\n.service-card h3 {\r\n  font-size: 24px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.service-arrow {\r\n  margin-top: 24px;\r\n  color: var(--primary);\r\n  display: inline-flex;\r\n}\r\n\r\n/* About Section */\r\n.about-section {\r\n  padding: 100px 0;\r\n  overflow: hidden;\r\n}\r\n\r\n.about-grid {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 80px;\r\n  align-items: center;\r\n}\r\n\r\n.about-image {\r\n  position: relative;\r\n}\r\n\r\n.about-image-circle {\r\n  width: 100%;\r\n  aspect-ratio: 1;\r\n  border-radius: 50%;\r\n  overflow: hidden;\r\n  border: 15px solid white;\r\n  box-shadow: var(--shadow-lg);\r\n}\r\n\r\n.about-image-circle img {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n}\r\n\r\n.experience-badge {\r\n  position: absolute;\r\n  bottom: 0;\r\n  right: 0;\r\n  background: white;\r\n  padding: 20px;\r\n  border-radius: 20px;\r\n  box-shadow: var(--shadow-lg);\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 16px;\r\n}\r\n\r\n.exp-icon {\r\n  width: 50px;\r\n  height: 50px;\r\n  background: var(--primary);\r\n  border-radius: 50%;\r\n  color: white;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.exp-icon svg {\r\n  width: 24px;\r\n  height: 24px;\r\n  fill: currentColor;\r\n}\r\n\r\n.exp-text h4 {\r\n  font-size: 28px;\r\n  margin-bottom: 0;\r\n}\r\n\r\n.exp-text span {\r\n  font-size: 14px;\r\n}\r\n\r\n.signature-block {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 30px;\r\n  margin-top: 40px;\r\n}\r\n\r\n.sig-name {\r\n  font-family: var(--font-heading);\r\n  font-size: 20px;\r\n  color: var(--text-dark);\r\n  font-weight: 700;\r\n}\r\n\r\n/* How We Work */\r\n.process-section {\r\n  padding: 80px 0;\r\n  background: var(--bg-light);\r\n}\r\n\r\n.process-grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(4, 1fr);\r\n  gap: 30px;\r\n  margin-top: 60px;\r\n  position: relative;\r\n}\r\n\r\n.process-grid::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 80px;\r\n  left: 10%;\r\n  width: 80%;\r\n  height: 2px;\r\n  background: repeating-linear-gradient(90deg, var(--primary) 0, var(--primary) 10px, transparent 10px, transparent 20px);\r\n  z-index: 1;\r\n}\r\n\r\n.process-card {\r\n  text-align: center;\r\n  position: relative;\r\n  z-index: 2;\r\n}\r\n\r\n.process-img {\r\n  width: 160px;\r\n  height: 160px;\r\n  border-radius: 50%;\r\n  margin: 0 auto 30px;\r\n  position: relative;\r\n  overflow: visible;\r\n}\r\n\r\n.process-img img {\r\n  width: 100%;\r\n  height: 100%;\r\n  border-radius: 50%;\r\n  object-fit: cover;\r\n  border: 10px solid var(--bg-light);\r\n}\r\n\r\n.process-num {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  width: 40px;\r\n  height: 40px;\r\n  background: var(--primary);\r\n  color: white;\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  font-weight: 700;\r\n  font-size: 18px;\r\n  border: 4px solid var(--bg-light);\r\n}\r\n\r\n.process-card h3 {\r\n  font-size: 20px;\r\n  margin-bottom: 12px;\r\n}\r\n\r\n/* Testimonials */\r\n.testimonials-section {\r\n  padding: 100px 0;\r\n}\r\n\r\n.testi-grid {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 40px;\r\n  margin-top: 60px;\r\n}\r\n\r\n.testi-card {\r\n  background: white;\r\n  border-radius: 24px;\r\n  padding: 50px 40px 40px;\r\n  box-shadow: var(--shadow-sm);\r\n  border: 1px solid var(--border-color);\r\n  position: relative;\r\n  margin-top: 30px;\r\n}\r\n\r\n.quote-icon {\r\n  position: absolute;\r\n  top: -30px;\r\n  left: 40px;\r\n  width: 60px;\r\n  height: 60px;\r\n  background: var(--primary);\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: white;\r\n  box-shadow: 0 10px 20px rgba(18, 144, 245, 0.3);\r\n}\r\n\r\n.quote-icon svg {\r\n  width: 30px;\r\n  height: 30px;\r\n  fill: currentColor;\r\n}\r\n\r\n.stars {\r\n  color: #FACC15;\r\n  margin-bottom: 20px;\r\n  font-size: 18px;\r\n}\r\n\r\n.testi-text {\r\n  font-size: 16px;\r\n  margin-bottom: 30px;\r\n}\r\n\r\n.testi-author {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 16px;\r\n}\r\n\r\n.author-img {\r\n  width: 60px;\r\n  height: 60px;\r\n  border-radius: 50%;\r\n  object-fit: cover;\r\n}\r\n\r\n.author-info h4 {\r\n  font-size: 18px;\r\n  margin-bottom: 4px;\r\n}\r\n\r\n/* CTA Banner */\r\n.cta-banner {\r\n  background: var(--primary);\r\n  border-radius: 30px;\r\n  padding: 60px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  color: white;\r\n  margin: 100px 0;\r\n  position: relative;\r\n}\r\n\r\n.cta-banner::before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNDAiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48L3N2Zz4=') repeat;\r\n  opacity: 0.5;\r\n}\r\n\r\n.cta-content {\r\n  position: relative;\r\n  z-index: 2;\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 30px;\r\n}\r\n\r\n.cta-icon {\r\n  width: 80px;\r\n  height: 80px;\r\n  background: white;\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: var(--primary);\r\n}\r\n\r\n.cta-icon svg {\r\n  width: 40px;\r\n  height: 40px;\r\n  fill: currentColor;\r\n}\r\n\r\n.cta-text h4 {\r\n  font-size: 24px;\r\n  color: white;\r\n  margin-bottom: 5px;\r\n  font-family: var(--font-body);\r\n  font-weight: 500;\r\n}\r\n\r\n.cta-text h2 {\r\n  font-size: 48px;\r\n  color: white;\r\n}\r\n\r\n.cta-image {\r\n  position: absolute;\r\n  right: 50px;\r\n  top: -30px;\r\n  bottom: -30px;\r\n  width: 250px;\r\n  z-index: 2;\r\n}\r\n\r\n.cta-image img {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n  border-radius: 50%;\r\n  border: 10px solid var(--primary);\r\n  box-shadow: var(--shadow-md);\r\n}\r\n\r\n/* Blog */\r\n.blog-section {\r\n  padding: 80px 0;\r\n}\r\n\r\n.blog-grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  gap: 30px;\r\n  margin-top: 50px;\r\n}\r\n\r\n.blog-card {\r\n  background: white;\r\n  border-radius: 20px;\r\n  overflow: hidden;\r\n  box-shadow: var(--shadow-sm);\r\n  border: 1px solid var(--border-color);\r\n}\r\n\r\n.blog-img {\r\n  position: relative;\r\n  height: 240px;\r\n}\r\n\r\n.blog-img img {\r\n  width: 100%;\r\n  height: 100%;\r\n  object-fit: cover;\r\n}\r\n\r\n.blog-tag {\r\n  position: absolute;\r\n  top: 20px;\r\n  left: 20px;\r\n  background: var(--primary);\r\n  color: white;\r\n  padding: 6px 16px;\r\n  border-radius: var(--radius-full);\r\n  font-size: 14px;\r\n  font-weight: 500;\r\n}\r\n\r\n.blog-content {\r\n  padding: 30px;\r\n}\r\n\r\n.blog-meta {\r\n  font-size: 14px;\r\n  margin-bottom: 12px;\r\n}\r\n\r\n.blog-content h3 {\r\n  font-size: 22px;\r\n  margin-bottom: 24px;\r\n}\r\n\r\n.blog-arrow {\r\n  width: 40px;\r\n  height: 40px;\r\n  background: var(--primary);\r\n  color: white;\r\n  border-radius: 50%;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  transition: var(--transition);\r\n}\r\n\r\n.blog-card:hover .blog-arrow {\r\n  background: var(--text-dark);\r\n}\r\n\r\n.blog-arrow svg {\r\n  width: 20px;\r\n  height: 20px;\r\n  fill: currentColor;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  background: var(--bg-light);\r\n  padding: 80px 0 30px;\r\n  margin-top: 80px;\r\n}\r\n\r\n.footer-grid {\r\n  display: grid;\r\n  grid-template-columns: 2fr 1fr 1fr 1.5fr;\r\n  gap: 40px;\r\n  margin-bottom: 60px;\r\n}\r\n\r\n.footer-col h4 {\r\n  font-size: 20px;\r\n  margin-bottom: 24px;\r\n}\r\n\r\n.footer-col p {\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.footer-links {\r\n  list-style: none;\r\n}\r\n\r\n.footer-links li {\r\n  margin-bottom: 12px;\r\n}\r\n\r\n.footer-links a:hover {\r\n  color: var(--primary);\r\n}\r\n\r\n.social-links {\r\n  display: flex;\r\n  gap: 10px;\r\n}\r\n\r\n.social-link {\r\n  width: 40px;\r\n  height: 40px;\r\n  border-radius: 50%;\r\n  background: white;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  color: var(--text-dark);\r\n  box-shadow: var(--shadow-sm);\r\n}\r\n\r\n.social-link:hover {\r\n  background: var(--primary);\r\n  color: white;\r\n}\r\n\r\n.social-link svg {\r\n  width: 18px;\r\n  height: 18px;\r\n  fill: currentColor;\r\n}\r\n\r\n.contact-list {\r\n  list-style: none;\r\n}\r\n\r\n.contact-item {\r\n  display: flex;\r\n  align-items: flex-start;\r\n  gap: 12px;\r\n  margin-bottom: 16px;\r\n}\r\n\r\n.contact-item svg {\r\n  width: 20px;\r\n  height: 20px;\r\n  fill: var(--primary);\r\n  flex-shrink: 0;\r\n  margin-top: 4px;\r\n}\r\n\r\n.footer-bottom {\r\n  padding-top: 30px;\r\n  border-top: 1px solid var(--border-color);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  font-size: 14px;\r\n}\r\n\r\n.footer-bottom-links {\r\n  display: flex;\r\n  gap: 20px;\r\n}\r\n\r\n/* Responsive */\r\n@media (max-width: 1024px) {\r\n  .hero-grid, .about-grid, .testi-grid {\r\n    grid-template-columns: 1fr;\r\n  }\r\n  \r\n  .services-grid, .blog-grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  \r\n  .process-grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  \r\n  .process-grid::before {\r\n    display: none;\r\n  }\r\n  \r\n  .footer-grid {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  \r\n  .appt-form {\r\n    grid-template-columns: 1fr 1fr;\r\n  }\r\n  \r\n  .appt-form button {\r\n    grid-column: span 2;\r\n  }\r\n  \r\n  .cta-image {\r\n    display: none;\r\n  }\r\n  \r\n  .cta-banner {\r\n    flex-direction: column;\r\n    text-align: center;\r\n    padding: 40px 20px;\r\n  }\r\n  \r\n  .cta-content {\r\n    flex-direction: column;\r\n    text-align: center;\r\n    margin-bottom: 30px;\r\n  }\r\n}\r\n\r\n@media (max-width: 768px) {\r\n  .hamburger {\r\n    display: flex;\r\n  }\r\n\r\n  .nav-links {\r\n    position: absolute;\r\n    top: 100%;\r\n    left: 0;\r\n    width: 100%;\r\n    background: white;\r\n    flex-direction: column;\r\n    padding: 20px 0;\r\n    box-shadow: var(--shadow-md);\r\n    transform: translateY(-20px);\r\n    opacity: 0;\r\n    pointer-events: none;\r\n    transition: var(--transition);\r\n  }\r\n  \r\n  .nav-links.active {\r\n    transform: translateY(0);\r\n    opacity: 1;\r\n    pointer-events: auto;\r\n  }\r\n  \r\n  .nav-links a {\r\n    padding: 10px 20px;\r\n    width: 100%;\r\n    display: block;\r\n  }\r\n  \r\n  .nav-actions {\r\n    display: none; /* Hide top-right actions on small screens to simplify */\r\n  }\r\n  \r\n  .hero-title {\r\n    font-size: 40px;\r\n  }\r\n  \r\n  .hero-image {\r\n    height: 400px;\r\n  }\r\n  \r\n  .services-grid, .blog-grid, .process-grid, .footer-grid {\r\n    grid-template-columns: 1fr;\r\n  }\r\n  \r\n  .appt-form {\r\n    grid-template-columns: 1fr;\r\n  }\r\n  \r\n  .appt-form button {\r\n    grid-column: span 1;\r\n  }\r\n}\r\n\r\n/* Scroll Animations */\r\n.reveal-hidden {\r\n  opacity: 0;\r\n  transform: translateY(30px);\r\n  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);\r\n}\r\n\r\n.reveal-visible {\r\n  opacity: 1;\r\n  transform: translateY(0);\r\n}\r\n\n"
+  }
+}
